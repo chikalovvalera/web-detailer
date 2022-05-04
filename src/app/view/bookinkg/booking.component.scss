@@ -1,0 +1,29 @@
+
+#booking {
+    background-color: black;
+    color: white;
+}
+.div-container {
+    padding: 40px;
+    height: calc(100vh - 50px);
+}
+.logobtn, .learn-more {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 12px;
+    border-radius: 2px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.1rem;
+}
+
+.logobtn {
+    border-style: solid;
+    border-color: #05FAFB;
+    border-width: 2px;
+    border-radius: 20px;
+    background-color: transparent;
+    text-decoration:none;
+    color: white;
+    white-space: nowrap;
+}

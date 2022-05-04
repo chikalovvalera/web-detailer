@@ -1,0 +1,38 @@
+<section id="portfolio"  >
+  <div style="padding-top: 1vh; height: 5vh;">
+    <div class="section-container-label-left">
+      <h1>Галлерея наших работ </h1>
+    </div>
+ 
+    <div style="padding-top:10px; float: right;">
+      <a href="#" class="logobtn">Смотреть все работы &rarr;</a> 
+    </div>
+ 
+  <div class="section-container" >
+    <mat-tab-group mat-align-tabs="center" mat-stretch-tabs disableRipple>
+      <mat-tab *ngFor="let tab of portfolioObject; let num = index" label="{{tab.name}}">
+        <div class="gallery__container" fxLayout="row wrap" style="max-width: 90vw; height: 70vh; background-color: black;">
+              <div class="gallery__image" *ngFor="let image of portfolioObject[num].images"
+                  [fxFlex]="image.grow + ' ' + image.shrink + ' ' + image.basis" [ngStyle]="{
+                'background': 'black url(' + image.src + ') no-repeat scroll center center',
+                margin: '0.25rem'
+              }">
+              </div>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+</div>
+  <!-- <div class="gallery__container" fxLayout="row wrap" [ngStyle]="{
+       'max-width': '80%',
+       'height': '70%'
+      }">
+    <div class="gallery__image" *ngFor="let image of images"
+      [fxFlex]="image.grow + ' ' + image.shrink + ' ' + image.basis" [ngStyle]="{
+          'background': 'black url(' + image.src + ') no-repeat scroll center center',
+          margin: '0.25rem'
+        }">
+    </div>
+  </div> -->
+  <!-- <app-scroll-down [tolink]="'portfolio'"></app-scroll-down> -->
+</section>

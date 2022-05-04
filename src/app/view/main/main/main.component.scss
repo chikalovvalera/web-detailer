@@ -1,0 +1,178 @@
+section {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+.main {
+    // padding-top: 5vh;
+    // padding-bottom: 5vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    background: 
+        linear-gradient(to right, black 30%, transparent), 
+        linear-gradient(to bottom right, black 30%, transparent), 
+        url("/assets/image/car.png") no-repeat right bottom;
+  
+    height: 100vh;
+}
+.navbtn-next {
+    display: flex;
+    margin-top: auto;
+    justify-content: center;
+    align-items: center;
+}
+.left-panel {
+    display: inline-flex;
+    flex-flow: column;
+}
+h1 {
+   font-size: 4rem;
+   line-height: 4rem;
+   text-align: justify;
+}
+h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+}
+h3 {
+    font-size: 3rem;
+    line-height: 3rem;
+}
+.text-line-container {
+    padding-top: 2vh;
+}
+.text-line1, .text-line2, .text-line3 {
+    padding-top: 1vh;
+}
+.imagelogo {
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-items: center;
+} 
+.image600 {    
+    object-fit: contain;
+    width: 100%;
+    height: auto;  
+}
+.logocar{
+    justify-items: se;
+    right: 0px;
+    width: 400px;
+    height: 200px;
+}
+.navbtn, .learn-more {
+
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 12px;
+    border-radius: 2px;
+    text-align: center;
+    display: inline-block;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+.navbtn {
+    border-style: solid;
+    border-color: #05FAFB;
+    border-width: 3px;
+    border-radius: 20px;
+    text-decoration:none;
+    color: whitesmoke;
+    white-space: nowrap;
+}
+.navbtn-block{
+    margin-top: 15vh;
+    align-content: stretch;
+}
+@media (max-width:1367px) and (min-width:600px) {
+    h1 {
+        font-size: 2rem;
+        line-height: 2rem;
+        text-align: justify;
+    }
+    h2 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        text-decoration: underline;
+        display: none;
+    }
+    h3 {
+        font-size: 2rem;
+        line-height: 1.5rem;
+        text-align: start;
+        color: aqua;
+        text-decoration-color: #05FAFB;
+    }
+    .navbtn, .learn-more {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+    .text-line-container {
+        padding-top: 5vh;
+    }
+    .text-line1, .text-line2, .text-line3 {
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
+    .navbtn-next {
+        display: none;
+    }
+}
+@media (max-width:599px) and (min-width:200px) {
+    section {
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+    }
+    .main{
+        position:relative;
+        background: 
+        linear-gradient(to right, black 30%, transparent),
+        url("/assets/image/car.png") no-repeat right bottom;
+       
+        padding-top: 20vh;
+        padding-bottom: 5vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        height: 75vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbtn-block {
+        display: none;
+    }
+    .navbtn {
+        display: none;
+    }
+    .navbtn-next {
+        display: flex;
+        margin-top: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    h1 {
+        font-size: 2rem;
+        line-height: 2rem;
+        text-align: justify;
+    }
+    h2 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        text-decoration: underline;
+        display: none;
+    }
+    h3 {
+        font-size: 2rem;
+        line-height: 1.5rem;
+        text-align: start;
+        color: aqua;
+        text-decoration-color: #05FAFB;
+    }
+    .text-line-container {
+        padding-top: 5vh;
+    }
+    .text-line1, .text-line2, .text-line3 {
+        padding-top: 1vh;
+    }
+}

@@ -1,44 +1,39 @@
-<section id="booking" style="min-height: auto; max-height: auto;">
-    
-    <div style=" padding-top: 50px; padding-bottom: 50px; display: inline-flex; width: 100%; ">
-        <div style="display: flex; margin-left: 20px; width: 70%; 
-        
-        background-color: black;
-        background: 
-        repeating-linear-gradient(-45deg, transparent, transparent 20px, black 20px, black 40px),
-        repeating-linear-gradient(-45deg, transparent 0 20px, black 20px 40px),
-        linear-gradient(to right, #05FAFB , black 90%);">
-        </div>
-       <div style="padding-right: 100px; width: 30%;">
-            <div class="section-container-label-right" style="width: 30vw;">
-                <h1>Записаться</h1>
-            </div>
-            <form [formGroup]="checkoutForm" style="padding-top: 10vh;"> 
-                
-                <div>
-                    <label for="name">
-                    <h2>Как вас зовут:</h2>
-                    </label>
-                    <input id="name" type="text" formControlName="name">
-                </div>
-                
-                <br>
-                <div>
-                    <label for="phone">
-                    <h2>Номер телефона:</h2>
-                    </label>
-                    <input id="phone" type="text" formControlName="phone">
-                </div>
-                <br>
-                <button class="logobtn" type="submit">Записаться</button>
-                <br>
-                <br>
-                <br>
-                <h2>Наши специалисты позвонят вам в ближайшее время !</h2>
-            </form>
-       </div> 
-    </div>    
-    <!-- <app-scroll-down [tolink]="'portfolio'"></app-scroll-down> -->
-   
-</section>
+<section id="booking">
+  <div class="booking">
+    <div class="booking-decoration"></div>
 
+    <div class="booking-content">
+      <div class="header-right" >
+        <h1>Записаться</h1>
+      </div>
+      <form [formGroup]="checkoutForm" style="padding-top: 10vh">
+        <div>
+          <label for="name">
+            <h2>Как вас зовут:</h2>
+          </label>
+          <input id="name" type="text" formControlName="name" />
+        </div>
+
+        <br />
+        <div>
+          <label for="phone">
+            <h2>Номер телефона:</h2>
+          </label>
+          <input id="phone" type="text" formControlName="phone" />
+        </div>
+        <br />
+        <button class="logobtn" type="submit">Записаться</button>
+        <br />
+        <br />
+        <br />
+        <h2>Наши специалисты позвонят вам в ближайшее время !</h2>
+      </form>
+
+    </div>
+
+
+  </div>
+  <div class="navbtn-next">
+    <app-scroll-down [tolink]="'portfolio'"></app-scroll-down>
+</div>
+</section>

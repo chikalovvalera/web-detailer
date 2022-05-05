@@ -1,29 +1,71 @@
+section {
+  // height: 50vh;
+  width: 100vw;
+  position: relative;
+  min-height: 60vh;
+  max-height: 60vh;
 
-#booking {
-    background-color: black;
-    color: white;
 }
-.div-container {
-    padding: 40px;
-    height: calc(100vh - 50px);
+.booking {
+
+  width: 98vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  display: inline-flex;
+  flex-direction: row;
+  // background-color: goldenrod;
 }
-.logobtn, .learn-more {
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 12px;
-    border-radius: 2px;
-    text-align: center;
-    display: inline-block;
-    font-size: 1.1rem;
+.booking-decoration {
+  width: 60vw;
+  margin-right: 5vw;
+  display: flex;
+  background-color: black;
+  background: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 20px,
+      black 20px,
+      black 40px
+    ),
+    repeating-linear-gradient(-45deg, transparent 0 20px, black 20px 40px),
+    linear-gradient(to right, #05fafb, black 90%);
+}
+.booking-content {
+  width: 25vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+.booking-content {
+  width: 25vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+.navbtn-next {
+  display: flex;
+  margin-top: 5vh;
+  justify-content: center;
+  align-items: center;
+}
+.logobtn,
+.learn-more {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 12px;
+  border-radius: 2px;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.1rem;
 }
 
 .logobtn {
-    border-style: solid;
-    border-color: #05FAFB;
-    border-width: 2px;
-    border-radius: 20px;
-    background-color: transparent;
-    text-decoration:none;
-    color: white;
-    white-space: nowrap;
+  border-style: solid;
+  border-color: #05fafb;
+  border-width: 2px;
+  border-radius: 20px;
+  background-color: transparent;
+  text-decoration: none;
+  color: white;
+  white-space: nowrap;
 }

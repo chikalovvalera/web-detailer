@@ -2,49 +2,51 @@ body {
     padding: 0;
     margin: 0;
     background: black;
+
     font-family: "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
 }
 body * {
     transition: all 0.400s ease-in-out;
 }
 
-.section-container-label-right {
-    position: absolute; 
+.header-right {
+    position: absolute;
     right: 0;
-    width: 40vw;
-    margin-right: 20px;
-    padding-right:30px;
-    padding-top: 10px;
-    border: 15px solid ;
+    margin-right: 2vw;
+    padding-right:1vw;
+    padding-top: 1vh;
+    border-top: 1vw solid ;
+    border-right: 1vw solid;
     border-image: linear-gradient(to right top, black 50%, aqua);
     border-image-slice: 1;
-    text-align: right;
+    background: transparent;
+    text-align: center;
     height: 5vh;
 }
 
-.section-container-label-left {
-    position: absolute; 
+.header-left {
+    position: absolute;
     left: 0;
-    width: 40vw;
-    margin-left: 20px;
-    padding-left:30px;
-    padding-top: 10px;
-    border: 15px solid ;
+    margin-left: 1vw;
+    padding-left:1vw;
+    padding-top: 1vh;
+    border-top: 15px solid ;
+    border-left: 15px solid ;
     border-image: linear-gradient(to left top, black 50%, aqua);
     border-image-slice: 1;
-    text-align: left;
+    text-align: center;
     height: 5vh;
 }
 .section-container {
     padding: 0 20px;
     margin-top: 10vh;
-    
+
     height: 87vh;
 }
 
 section {
     color: white;
-   
+
     min-width: 100vw;
     max-width: 100vw;
     min-height: 100vh;
@@ -53,11 +55,4 @@ section {
 
 html {
     scroll-behavior: smooth;
-}
-.a {
-    grid-area: a;
-    
-}
-.b{
-    grid-area: b;
 }

@@ -3,11 +3,11 @@
   padding:1vh !important;
 }
 
-::ng-deep .mat-card{
+::ng-deep .main-content.mat-card{
   display:flex;// <-- Add this /
   flex-direction: column;
-  // min-height: 100vh;
-  // max-height: 100vh;
+  min-height: 100vh;
+  max-height: 100vh;
   background: linear-gradient(to right, black 30%, transparent),
   linear-gradient(to bottom right, black 30%, transparent),
   url("/assets/image/car.png") no-repeat right bottom;

@@ -23,16 +23,19 @@ $my-app-theme: mat-dark-theme($my-app-primary, $my-app-accent, $my-app-warn);
 
 html,
 body {
-  background-color:grey;
+  background-color:black;
   height: 100%;
 }
 body {
+  background-color:black;
+
   margin: 0;
   font-family: Roboto, 'Helvetica Neue', sans-serif;
 }
 :focus {
   outline: none;
 }
+//https://www.concretepage.com/angular-material/angular-material-inputs
 //https://icon-icons.com/ru/%D0%9F%D0%BE%D0%B8%D1%81%D0%BA/%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B8/?filtro=tiktok+svg
 //https://colorhunt.co/palette/7b113a150e561597bb8fd6e1
 //http://mcg.mbitson.com/#!?mcgpalette0=%2305fafb&themename=mcgtheme#%2F

@@ -1,6 +1,6 @@
 
 
-::ng-deep .mat-card-content {
+::ng-deep .booking-content.mat-card-content {
   background: repeating-linear-gradient(
     -45deg,
     transparent,
@@ -10,4 +10,8 @@
   ),
   repeating-linear-gradient(-45deg, transparent 0 20px, black 20px 40px),
   linear-gradient(to left, #05fafb, black 90%);
+}
+
+.booking-content{
+  background-color: black;
 }

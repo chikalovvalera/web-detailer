@@ -1,0 +1,26 @@
+::ng-deep .mat-card-header{
+  background-color:transparent !important;
+  padding:1vh !important;
+}
+
+::ng-deep .mat-card{
+  display:flex;// <-- Add this /
+  flex-direction: column;
+  // min-height: 100vh;
+  // max-height: 100vh;
+  background: linear-gradient(to right, black 30%, transparent),
+  linear-gradient(to bottom right, black 30%, transparent),
+  url("/assets/image/car.png") no-repeat right bottom;
+  background-size: cover;
+}
+
+::ng-deep .mat-card-content{
+  padding:5px !important;
+  flex-grow: 1;
+  overflow: auto;
+}
+.image600 {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}

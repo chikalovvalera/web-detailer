@@ -1,39 +1,33 @@
 <section id="booking">
-  <div class="booking">
-    <div class="booking-decoration"></div>
+<mat-card>
+  <mat-card-header >
+  </mat-card-header>
+  <mat-card-content>
+    <mat-grid-list cols="3" rows="3" rowHeight="2:1" >
 
-    <div class="booking-content">
-      <div class="header-right" >
-        <h1>Записаться</h1>
+
+      <mat-grid-tile [colspan]="1" [rowspan]="1">
+        <div style="display: flex; flex-direction: column;">
+        <mat-form-field>
+          <textarea matInput placeholder="Ваше имя">
+          </textarea>
+        </mat-form-field>
+
+        <mat-form-field>
+          <textarea matInput placeholder="Номер телефона">
+          </textarea>
+        </mat-form-field>
       </div>
-      <form [formGroup]="checkoutForm" style="padding-top: 10vh">
-        <div>
-          <label for="name">
-            <h2>Как вас зовут:</h2>
-          </label>
-          <input id="name" type="text" formControlName="name" />
-        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </mat-card-content>
+  <mat-card-footer>
 
-        <br />
-        <div>
-          <label for="phone">
-            <h2>Номер телефона:</h2>
-          </label>
-          <input id="phone" type="text" formControlName="phone" />
-        </div>
-        <br />
-        <button class="logobtn" type="submit">Записаться</button>
-        <br />
-        <br />
-        <br />
-        <h2>Наши специалисты позвонят вам в ближайшее время !</h2>
-      </form>
+  </mat-card-footer>
+</mat-card>
 
-    </div>
-
-
-  </div>
-  <div class="navbtn-next">
-    <app-scroll-down [tolink]="'portfolio'"></app-scroll-down>
-</div>
 </section>
+
+
+
+

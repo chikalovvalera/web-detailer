@@ -2,10 +2,7 @@ import { PortfolioService } from './service/portfolio/portfolio.service';
 import { NgModule, Component } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
-import { MatTabsModule } from '@angular/material/tabs';
-import { MatIconModule } from '@angular/material/icon';
-import { MatListModule} from '@angular/material/list';
-import { MatButtonModule } from '@angular/material/button';
+import { AngularMaterialModule } from './angular-material.module.ts';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 import { AppComponent } from './app.component';
@@ -43,10 +40,7 @@ const appRoutes : Routes = [
     BrowserAnimationsModule,
     BrowserModule,
     RouterModule.forRoot(appRoutes),
-    MatButtonModule,
-    MatTabsModule,
-    MatIconModule,
-    MatListModule,
+    AngularMaterialModule,
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,

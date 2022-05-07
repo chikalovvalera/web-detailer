@@ -1,26 +1,30 @@
 <mat-card class="main-content">
-  <mat-card-header >
+  <mat-card-header style="display: flex; flex-direction: row; align-items: center;">
     <button mat-fab color="primary"><mat-icon svgIcon="icon-instagram"></mat-icon></button>
     <button mat-fab color="primary"><mat-icon svgIcon="icon-vk"></mat-icon></button>
     <button mat-fab color="primary"><mat-icon svgIcon="icon-tiktok"></mat-icon></button>
     <div style="margin-left: 5vw ;">
-      <h1>Сургут, ул.Профсоюзов д.9</h1>
+      <h2>Сургут, ул.Профсоюзов д.9</h2>
     </div>
     <div style="padding-left: 5vw; padding-right: 1vw;">
-    <mat-icon>phone</mat-icon>
   </div>
-    <div style="  word-spacing: 2em;   ">
-      <h1> +79222334455 +79222334455</h1>
+    <div style="  word-spacing: 2em;   display: flex; flex-direction: row; align-items: center;">
+      <mat-icon style="padding-right: 2vw;">phone</mat-icon>
+      <h2> +79222334455 +79222334455</h2>
     </div>
 
   </mat-card-header>
   <mat-card-content>
-    <mat-grid-list cols="3" rows="3" rowHeight="2:1" >
-      <mat-grid-tile [colspan]="3" [rowspan]="2">  <img src="/assets/image/1.png" style="width:100%; height: auto;" /></mat-grid-tile>
-      <mat-grid-tile [colspan]="1" [rowspan]="1"> Two </mat-grid-tile>
-      <mat-grid-tile [colspan]="2" [rowspan]="1"> Three </mat-grid-tile>
-
-
+    <mat-grid-list cols="3" rows="3" rowHeight="2:1.5" >
+      <mat-grid-tile colspan="3" rowspan="1"> <img src="/assets/image/logo_vector1.svg" style="width:100%; height: auto;" /></mat-grid-tile>
+      <mat-grid-tile colspan="3" rowspan="0.5">
+        <div style="max-height: 50vh; min-height: 30vh; width: 100%; display: flex; flex-direction: row; justify-content: space-evenly;" >
+          <h1>Полировка</h1>
+          <h1>Химчистка</h1>
+          <h1>Бронирование</h1>
+          <h1>Аудио подготовка</h1>
+        </div>
+      </mat-grid-tile>
     </mat-grid-list>
   </mat-card-content>
   <mat-card-footer>

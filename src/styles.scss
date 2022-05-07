@@ -23,17 +23,29 @@ $my-app-theme: mat-dark-theme($my-app-primary, $my-app-accent, $my-app-warn);
 
 html,
 body {
-  background-color:black;
+  margin: 0;
   height: 100%;
+  background-color: black;
 }
 body {
-  background-color:black;
-
-  margin: 0;
+  // background-color:black;
   font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+body * {
+  transition: all 0.400s ease-in-out;
+}
+.with-round-borders{
+  border-radius: 50px;
+}
+.with-round-borders:hover {
+  background-color:  #3aafa9;
 }
 :focus {
   outline: none;
+}
+::ng-deep .mat-card {
+  background-color:gray;
+  max-height: inherit;
 }
 //https://www.concretepage.com/angular-material/angular-material-inputs
 //https://icon-icons.com/ru/%D0%9F%D0%BE%D0%B8%D1%81%D0%BA/%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B8/?filtro=tiktok+svg

@@ -12,6 +12,32 @@
   linear-gradient(to left, #05fafb, black 90%);
 }
 
-.booking-content{
+::ng-deep .mat-card {
+  // background-color: tan;
   background-color: black;
+  max-height: inherit;
+}
+::ng-deep .mat-card-content {
+  // background-color: tan;
+  // background-color: red;
+  max-height: inherit;
+}
+::ng-deep .mat-form-field {
+  .mat-input-element {
+      font-size: 2em;
+  }
+  .mat-form-field-label {
+      font-size: 1.5em;
+  }
+}
+.mat-focused .placeholder {
+  color: white;
+}
+::ng-deep .mat-form-field.mat-focused {
+  .mat-form-field-label {
+    color: #ff884d;
+  }
+}
+.placeholder {
+  color: #05fafb;
 }

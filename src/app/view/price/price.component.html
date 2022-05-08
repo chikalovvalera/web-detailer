@@ -12,19 +12,31 @@
       <mat-icon style="padding-right: 2vw;">phone</mat-icon>
       <h2> +79222334455 +79222334455</h2>
     </div>
-
   </mat-card-header>
   <mat-card-content>
-    <mat-grid-list cols="3" rows="3" rowHeight="2:1.5" >
-      <mat-grid-tile colspan="3" rowspan="1"> <img src="/assets/image/logo_vector1.svg" style="width:100%; height: auto;" /></mat-grid-tile>
-      <mat-grid-tile colspan="3" rowspan="0.5">
-        <div style="max-height: 50vh; min-height: 30vh; width: 100%; display: flex; flex-direction: row; justify-content: space-evenly;" >
-          <h1>Полировка</h1>
-          <h1>Химчистка</h1>
-          <h1>Бронирование</h1>
-          <h1>Аудио подготовка</h1>
+    <!-- md-gutter="1em" -->
+    <mat-grid-list cols="3" rows="2"  rowHeight="16:10" >
+      <mat-grid-tile colspan="3" rowspan="0.5"> <img src="/assets/image/logo.svg" style="width:100%; height: auto;" /></mat-grid-tile>
+      <mat-grid-tile colspan="1" rowspan="0.5">
+        <div style="display: flex; flex-direction: column; justify-content:space-evenly; height: 100%;">         
+          <div *ngFor="let label of serviceLabel.keys()"  (click)="setContent(label)">
+            <h1 [ngStyle]="{'color': index===label ? '#5BC3CD' : 'white' }"  >
+            {{label}}
+            </h1>
+        </div>
         </div>
       </mat-grid-tile>
+      
+      <mat-grid-tile colspan="1" rowspan="0.5">
+        <div  style="display: flex; flex-direction: column; justify-content: start; height: 100%;">
+          <h3 *ngFor="let labelText of serviceLabel.get(index)">{{labelText}}</h3>
+        </div>
+      </mat-grid-tile>
+
+      <mat-grid-tile colspan="1" rowspan="0.5">
+      </mat-grid-tile>
+      
+
     </mat-grid-list>
   </mat-card-content>
   <mat-card-footer>

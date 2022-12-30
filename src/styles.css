@@ -1,0 +1,88 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; width: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #1F2833;}
+
+.page-container {
+  height: auto; 
+  margin-top: 5rem; 
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* justify-content: center; */
+  align-items: center;
+  overflow: hidden;
+}
+.page-container-header {
+  width: 80%;
+  height: 20px; 
+  border-bottom: 10px solid #45A29E;  
+  margin-top: 2rem; margin-bottom: 5rem;
+}
+.page-container-header-label {
+  font-size: 40px;
+  background-color: white;
+  padding: 10px 10px;
+  /* margin-left: 100px; */
+}
+
+.block-footer {
+  height: 20%;
+}
+
+ngb-carousel .wrapper {
+    
+    position: relative;
+    height: 0;
+    padding-top: 30%; /* Keep ratio for 900x500 images */
+  }
+ngb-carousel .wrapper>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+/* .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(5,195,221)' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e") !important;
+}
+.carousel-control-prev-icon {
+  
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(5,195,221)' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M5.25,0 6.75,1.5 4.25,4 6.75,6.5 5.25,8 1.25,4 Z'/%3e%3c/svg%3e") !important;
+}
+
+.carousel-indicators {
+  margin-top:  -2rem !important;
+  top: 0 !important;
+}
+.carousel-indicators [aria-selected="false"]{
+  background-color: cadetblue !important;
+  height: 0.6rem !important;
+  width: 50px !important;
+}
+.carousel-indicators .active {
+    background-color: rgb(5,195,221) !important;
+    height: 0.6rem !important;
+    width: 50px !important;
+}
+ */
+body::-webkit-scrollbar {
+  scrollbar-gutter: stable both-edges;
+  width: 18px;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background: #45A29E !important;
+}

@@ -1,0 +1,24 @@
+<div id="service-block" class="page-container">
+    <div class="page-container-header">
+        <span class="page-container-header-label">Услуги</span>
+    </div>
+    <div class="service-content">
+        <div *ngFor="let label of getLabel()" class="service-box" id="{{label}}">
+            <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                <div class="service-box-label" style="width: 100%;">
+                    <h2>{{label}}</h2>
+                </div>
+                <button mat-icon-button class="btn-content">
+                    <mat-icon>arrow_drop_down</mat-icon>
+                </button>
+                
+            </div>
+            <div class="content">
+                <div class="service-box-line"></div>
+                <div class="service-box-text-container">
+                    <h4 *ngFor="let text of getText(label)" class="service-box-text">{{text}}</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

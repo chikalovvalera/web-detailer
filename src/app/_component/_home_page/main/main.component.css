@@ -1,0 +1,123 @@
+.homelayout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  
+  overflow: hidden;
+  background-color: #1F2833;
+  padding-bottom: 20vh;
+  padding-top: 5vh;
+}
+
+.logo-block {
+  /* + */
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  padding-top: 5rem;
+  padding-right: 15vw;
+  padding-left: 15vw;
+}
+
+.logo-img {
+  height: auto;
+  width: 100%;
+}
+
+.logo-label {
+  /* padding-left: 0.5rem; */
+  /* padding-right: 0.5rem; */
+  font-size: 1em;
+  color: #C5C6C7;
+}
+
+.logo-delimiter {
+  width: 70%;
+  height: 0.25rem;
+  background-color: #C5C6C7;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.logo-text {
+  color: #C5C6C7;
+  width: 60%;
+  padding-top: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.page-padding {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.nav {
+  color: #C5C6C7;
+  border-bottom: 2px solid #C5C6C7;
+  /* padding: 0.25rem 1rem; */
+  margin: 0 2rem;
+  -webkit-transition: 0.5s ease;
+  /* Safari and Chrome */
+  -moz-transition: 2s ease;
+  /* Firefox 4 */
+  -o-transition: 2s ease;
+  /* Opera */
+}
+
+.nav:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  border-bottom: 3px solid #66FCF1;
+  color: white;
+}
+
+
+@media (max-width: 575px) {
+  .homelayout {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    overflow-x: hidden;
+    background-color: #1F2833;
+    padding-bottom: 10vh;
+    padding-top: 5vh;
+  }
+  .logo-block {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    padding-top: 3rem;
+    padding-right: 5vw;
+    padding-left: 5vw;
+  }
+  .logo-label {
+    font-size: 0.7em;
+    color: #C5C6C7;
+  }
+  .logo-delimiter {
+    width: 90%;
+    height: 0.15rem;
+    background-color: #C5C6C7;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .logo-text {
+    color: #C5C6C7;
+    width: 80%;
+    padding-top: 3rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+   
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {}
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+@media (min-width: 1200px) {}

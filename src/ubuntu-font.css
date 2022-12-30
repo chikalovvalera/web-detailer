@@ -1,0 +1,32 @@
+@font-face {
+  font-family: UbuntuFontFamilyBold;
+  src: url("/src/assets/font-family/ubuntu/Ubuntu-Bold.woff") format('woff');
+}
+@font-face {
+  font-family: UbuntuFontFamilyBoldItalic;
+  src: url("/src/assets/font-family/ubuntu/Ubuntu-BoldItalic.woff") format('woff');
+}
+@font-face {
+  font-family: UbuntuFontFamilyItalic;
+  src: url("/src/assets/font-family/ubuntu/Ubuntu-Italic.woff") format('woff');
+}
+@font-face {
+  font-family: UbuntuFontFamilyLight;
+  src: url("/src/assets/font-family/ubuntu/Ubuntu-Light.woff") format('woff');
+}
+@font-face {
+  font-family: UbuntuFontFamilyLightItalic;
+  src: url("/src/assets/font-family/ubuntu/Ubuntu-LightItalic.woff") format('woff');
+}
+@font-face {
+  font-family: UbuntuFontFamilyMedium;
+  src: url("/src/assets/font-family/ubuntu/Ubuntu-Medium.woff") format('woff');
+}
+@font-face {
+  font-family: UbuntuFontFamilyMediumItalic;
+  src: url("/src/assets/font-family/ubuntu/Ubuntu-MediumItalic.woff") format('woff');
+}
+@font-face {
+  font-family: UbuntuFontFamilyRegular;
+  src: url("/src/assets/font-family/ubuntu/Ubuntu-Regular.woff") format('woff');
+}

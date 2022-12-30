@@ -1,21 +1,11 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "cli": {
-    "analytics": "43308eb7-f3a7-45af-bdac-e11ba5f2d60f"
-  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "detailer": {
+    "web-detailer": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
-          "style": "scss"
-        },
-        "@schematics/angular:application": {
-          "strict": true
-        }
-      },
+      "schematics": {},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -23,21 +13,31 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/detailer",
+            "outputPath": "dist/web-detailer",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
-              "src/styles.scss"
+              "src/styles.css",
+              "src/assets/fonts/ubuntu/font-style/UbuntuFontFamilyBold.css",
+              "src/assets/fonts/ubuntu/font-style/UbuntuFontFamilyBoldItalic.css",
+              "src/assets/fonts/ubuntu/font-style/UbuntuFontFamilyItalic.css",
+              "src/assets/fonts/ubuntu/font-style/UbuntuFontFamilyLight.css",
+              "src/assets/fonts/ubuntu/font-style/UbuntuFontFamilyLightItalic.css",
+              "src/assets/fonts/ubuntu/font-style/UbuntuFontFamilyMedium.css",
+              "src/assets/fonts/ubuntu/font-style/UbuntuFontFamilyMediumItalic.css",
+              "src/assets/fonts/ubuntu/font-style/UbuntuFontFamilyRegular.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -76,10 +76,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "detailer:build:production"
+              "browserTarget": "web-detailer:build:production"
             },
             "development": {
-              "browserTarget": "detailer:build:development"
+              "browserTarget": "web-detailer:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -87,31 +87,13 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "detailer:build"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "src/test.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.spec.json",
-            "karmaConfig": "karma.conf.js",
-            "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
-              "src/styles.scss"
-
-            ],
-            "scripts": []
+            "browserTarget": "web-detailer:build"
           }
         }
       }
     }
   },
-  "defaultProject": "detailer"
+  "cli": {
+    "analytics": "a39e3dde-bd55-4b36-a6fb-3eaaeaf7636e"
+  }
 }

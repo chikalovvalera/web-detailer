@@ -1,0 +1,17 @@
+<div id="gallery-block" class="page-container">
+  <div class="page-container-header">
+    <span class="page-container-header-label">Наши работы</span>
+  </div>
+  <div>
+    <ngb-carousel #carousel class="carousel slide" data-bs-ride="carousel">
+      <ng-template ngbSlide *ngFor="let galleryItem of gallery;">
+        <div class="gallery__container" fxLayout="row wrap">
+          <div *ngFor="let image of galleryItem.images"
+            [fxFlex]="image.grow + ' ' + image.shrink + ' ' + image.basis" [ngClass]="'gallery_image'" 
+            [ngStyle]="{'background': 'transparent url(' + image.img + ') no-repeat scroll center center', margin: '0.25rem'}">
+          </div>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  </div>
+</div>
